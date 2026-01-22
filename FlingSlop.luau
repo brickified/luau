@@ -1,5 +1,11 @@
--- Version 1.02 as of Jan 22, 2026
+-- Version 1.0 as of Jan 22, 2026
+--[[ Supported Games:
+- Fling People and Objects
+- Fling Furniture and People [untested]
+]]
 
+print('ran')
+local Me = game.Players.LocalPlayer
 local blur = Instance.new("BlurEffect")
 blur.Size = 15
 blur.Name = "BricGuiBlur"
