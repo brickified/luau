@@ -2,6 +2,8 @@
 Supported games:
 - Fling things and jerry
 - Fling Animals and People
+
+Loadstring: loadstring(game:HttpGet("https://raw.githubusercontent.com/brickified/luau/refs/heads/main/Jerryslop.luau"))()
 ]]
 
 if game:GetService("CoreGui"):FindFirstChild("JerrySlopGui") then
