@@ -3,7 +3,7 @@ Supported games:
 - Fling things and jerry
 - Fling Animals and People
 
-Loadstring: loadstring(game:HttpGet("https://raw.githubusercontent.com/brickified/luau/refs/heads/main/Jerryslop.luau"))()
+Loadstring: loadstring(game:HttpGet("https://raw.githubusercontent.com/brickified/luau/refs/heads/main/Jerryslop.lua"))()
 ]]
 
 if game:GetService("CoreGui"):FindFirstChild("JerrySlopGui") then
@@ -668,7 +668,7 @@ FunTab:AddButton("Crash Server", function()
 		end)
 	end
 
-	print('finished, server hopping in 8 sec')
+	print('finished')
 end)
 
 Menu:Finalize()
